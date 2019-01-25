@@ -8,3 +8,13 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+// CSS
+import '../stylesheets/application.css.scss'
+
+// JS
+import 'bootstrap';
+import '../src/global.js'
+
+// images
+require.context('../images/', true, /\.(gif|jpg|png|svg)$/i);
