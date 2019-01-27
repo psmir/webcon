@@ -1,0 +1,9 @@
+!!!
+%html
+  = render 'shared/layout/head'
+
+  %body
+    = render 'shared/fancy_header'
+    %main.container.mt-5
+      = yield
+    = render 'shared/footer'
