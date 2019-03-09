@@ -14,7 +14,8 @@ import '../stylesheets/application.css.scss'
 
 // JS
 import 'bootstrap';
-import '../src/global.js'
+import '../src/global.js';
+import '../components/index.js';
 
 // images
 require.context('../images/', true, /\.(gif|jpg|png|svg)$/i);
