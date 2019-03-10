@@ -1,11 +1,11 @@
 
-%h1.text-center Наши специалисты помогут Вам
+%h1.text-center= I18n.t('landing.promise')
 .row.mt-5
   .col-4
     .card
       = image_tag asset_pack_path('images/landing/consultant.jpg'), class: 'card-img-top'
       .card-body
-        %h5.card-title Личностный рост
+        %h5.card-title= t('personal_growth')
         %p.card-text
           Лорем ипсум долор сит амет, вирис алтерум омнесяуе меи еу, 
           но дебет витуперата яуи. Ех либрис импердиет меа, пер еу ерат яуаерендум цонсеяуунтур, 
@@ -15,7 +15,7 @@
     .card
       = image_tag asset_pack_path('images/landing/woman.jpg'), class: 'card-img-top'
       .card-body
-        %h5.card-title Карьера
+        %h5.card-title= t('career')
         %p.card-text
           Меи ад сале дицам дицунт. Нец те велит елецтрам. Нобис либерависсе цум ут, ид нец еверти дебитис
           цонтентионес, еа пробатус атоморум хис. Те при долор латине. Харум яуандо яуалисяуе ад нец, нец
@@ -24,7 +24,7 @@
     .card
       = image_tag asset_pack_path('images/landing/romantic.jpg'), class: 'card-img-top'
       .card-body
-        %h5.card-title Семья
+        %h5.card-title= t('family')
         %p.card-text
           Дебет либерависсе сеа те, ет цум промпта адиписцинг цонтентионес. Еи про яуем ерос иисяуе, вих
           ерант принципес неглегентур но. Солута импетус ид сед, деленит иудицабит форенсибус усу еа, 
@@ -34,7 +34,7 @@
     .card
       = image_tag asset_pack_path('images/landing/teacher.jpg'), class: 'card-img-top'
       .card-body
-        %h5.card-title Тайм-менеджмент
+        %h5.card-title= t('time-management')
         %p.card-text
           Инермис малуиссет персецути еа усу. Ан яуи ехпетенда яуалисяуе. Поссит цонвенире яуо но.
           Платонем инимицус продессет меа цу, постеа адиписцинг
@@ -43,7 +43,7 @@
     .card
       = image_tag asset_pack_path('images/landing/man.jpg'), class: 'card-img-top'
       .card-body
-        %h5.card-title Работа над Вашим имиджем
+        %h5.card-title= t('time_management')
         %p.card-text
           Вим ад ратионибус интеллегебат. Вулпутате дефиниебас те дуо. Велит ерудити антиопам про ут, 
           ет яуо виртуте аццумсан персеяуерис, сеа еу адмодум интеллегат. Инимицус торяуатос интерессет не вих,
@@ -52,7 +52,7 @@
     .card
       = image_tag asset_pack_path('images/landing/romance.jpg'), class: 'card-img-top'
       .card-body
-        %h5.card-title Удовольствие от жизни
+        %h5.card-title= t('happiness')
         %p.card-text
           Платонем мнесарчум еу еос, яуи ин видит утрояуе перципитур, еу солум луцилиус ест. Солеат цивибус
           те еос. Легимус персеяуерис яуо еу, еи одио ерипуит еум, еа мазим ессент тибияуе усу. 

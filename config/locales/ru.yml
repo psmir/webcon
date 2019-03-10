@@ -1,0 +1,19 @@
+ru:
+  sign_in: "Вход"
+  sign_up: "Регистрация"
+  sign_out: "Выход"
+
+  personal_growth: "Личностный рост"
+  career: "Карьера"
+  family: "Семья"
+  image_making: "Работа над Вашим имиджем"
+  time_management: "Тайм-менеджмент"
+  happiness: "Счастье"
+
+  landing:
+    promise: "Наши специалисты помогут Вам!"
+
+  activerecord:
+    attributes:
+      user:
+        password_digest: "Пароль"

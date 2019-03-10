@@ -30,7 +30,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  sign_in: "Sign In"
+  sign_up: "Sign Up"
+  sign_out: "Sign Out"
+
+  pesonal_growth: "Personal Growth"
+  career: "Career"
+  family: "Family"
+  image_making: "Image-making"
+  time_management: "Time-management"
+  happiness: "Happiness"
+
+  landing:
+    promise: "Our experts will help you!"
+
   activerecord:
     attributes:
       user:
