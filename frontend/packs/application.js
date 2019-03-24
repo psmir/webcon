@@ -13,6 +13,7 @@ console.log('Hello World from Webpacker')
 import '../stylesheets/application.css.scss'
 
 // JS
+import Rails from 'rails-ujs';
 import 'bootstrap';
 import '../src/global.js';
 import '../components/index.js';
@@ -25,3 +26,4 @@ import { definitionsFromContext } from "stimulus/webpack-helpers"
 const application = Application.start()
 const context = require.context("controllers", true, /.js$/)
 application.load(definitionsFromContext(context))
+Rails.start();

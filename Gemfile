@@ -29,6 +29,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml-rails', '~> 1.0.0'
 gem 'komponent', '~> 2.2.0'
 gem 'oath', '~> 1.1.0'
+gem 'simple_form', '~> 4.1.0'
+gem 'dry-validation', '~> 0.13.0'
+gem 'reform', '2.3.0.rc1'
+gem 'trailblazer'
+gem 'trailblazer-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

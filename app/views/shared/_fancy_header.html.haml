@@ -2,8 +2,12 @@
   %nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.initial
     %a.navbar-brand{ href: '#' } WebCon
     %ul.navbar-nav.ml-auto
-      %li.nav-item
-        = link_to 'Вход', '#', class: 'nav-link'
-      %li.nav-item
-        = link_to 'Регистрация', '#', class: 'nav-link'
+      - if signed_in?
+        %li.nav-item       
+          = link_to 'Выход', session_path, method: :delete, class: 'nav-link'
+      - else
+        %li.nav-item
+          = link_to 'Вход', new_session_path, class: 'nav-link'
+        %li.nav-item
+          = link_to 'Регистрация', '#', class: 'nav-link'
   #intro.view
