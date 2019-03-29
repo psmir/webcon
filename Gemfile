@@ -40,6 +40,9 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.8'
+  gem 'capybara', '~> 3.16.0'
+  gem 'capybara-webkit', '~> 1.15.1'
+  gem 'capybara-email', '~> 3.0.1'
 end
 
 group :development do
