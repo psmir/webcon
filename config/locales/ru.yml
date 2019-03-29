@@ -2,6 +2,7 @@ ru:
   sign_in: "Вход"
   sign_up: "Регистрация"
   sign_out: "Выход"
+  greeting: 'Добро пожаловать!'
 
   personal_growth: "Личностный рост"
   career: "Карьера"

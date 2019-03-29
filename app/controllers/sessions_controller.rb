@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   def create
     run Session::Create do |result|
       sign_in result[:user]
-      return redirect_to dashboard_path
+      return redirect_to dashboard_path, success: t(:greeting)
     end
 
     render :new
