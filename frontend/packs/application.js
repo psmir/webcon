@@ -14,6 +14,7 @@ import '../stylesheets/application.css.scss'
 
 // JS
 import Rails from 'rails-ujs';
+import Turbolinks from 'turbolinks';
 import 'bootstrap';
 import '../src/global.js';
 import '../components/index.js';
@@ -27,3 +28,4 @@ const application = Application.start()
 const context = require.context("controllers", true, /.js$/)
 application.load(definitionsFromContext(context))
 Rails.start();
+Turbolinks.start();
