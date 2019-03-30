@@ -3,6 +3,7 @@ ru:
   sign_up: "Регистрация"
   sign_out: "Выход"
   greeting: 'Добро пожаловать!'
+  wrong_credentials: 'Неверный еmail или пароль'
 
   personal_growth: "Личностный рост"
   career: "Карьера"

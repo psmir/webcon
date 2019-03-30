@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml-rails', '~> 1.0.0'
 gem 'komponent', '~> 2.2.0'
-gem 'oath', '~> 1.1.0'
+gem 'bcrypt', '~> 3.1.12'
 gem 'simple_form', '~> 4.1.0'
 gem 'dry-validation', '~> 0.13.1'
 gem 'reform', '2.3.0.rc1'

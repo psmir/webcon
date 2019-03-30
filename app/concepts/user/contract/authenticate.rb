@@ -1,8 +1,8 @@
 require "reform"
 require "reform/form/dry"
 
-module Session::Contract
-  class Create < Reform::Form
+module User::Contract
+  class Authenticate < Reform::Form
     include Dry
 
     property :email, virtual: true
