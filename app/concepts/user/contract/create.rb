@@ -9,7 +9,7 @@ module User::Contract
 
     validation do
       required(:email).filled(format?: URI::MailTo::EMAIL_REGEXP)
-      required(:password).filled.confirmation
+      required(:password).filled(min_size?: 12).confirmation
       required(:role).value(included_in?: %w[client consultant])
     end
 

@@ -36,6 +36,9 @@ en:
   greeting: 'Welcome!'
   wrong_credentials: 'Email or password is invalid'
   signed_up_message: 'You have signed up successfully. Now you can sign in.'
+  email: 'Email'
+  password: 'Password'
+  password_confirmation: 'Password Confirmation'
 
   pesonal_growth: "Personal Growth"
   career: "Career"
