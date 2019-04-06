@@ -35,6 +35,7 @@ en:
   sign_out: "Sign Out"
   greeting: 'Welcome!'
   wrong_credentials: 'Email or password is invalid'
+  signed_up_message: 'You have signed up successfully. Now you can sign in.'
 
   pesonal_growth: "Personal Growth"
   career: "Career"

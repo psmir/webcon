@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get :dashboard, to: "dashboard#show"
 
   resource :session
+  resource :users, only: %i[new create]
   
   root to: "landing#index"
 end

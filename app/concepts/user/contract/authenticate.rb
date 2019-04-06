@@ -1,5 +1,4 @@
-require "reform"
-require "reform/form/dry"
+# frozen_string_literal: true
 
 module User::Contract
   class Authenticate < Reform::Form
@@ -12,9 +11,5 @@ module User::Contract
       required(:email)
       required(:password)
     end
-
-    # def initialize()
-    #   super OpenStruct.new
-    # end
   end
 end
