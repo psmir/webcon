@@ -10,7 +10,7 @@ module User::Contract
     validation do
       required(:email).filled(format?: URI::MailTo::EMAIL_REGEXP)
       required(:password).filled(min_size?: 12).confirmation
-      required(:role).value(included_in?: %w[client consultant])
+      required(:role).value(included_in?: %w[client1 consultant1])
     end
 
     def to_key
@@ -19,6 +19,9 @@ module User::Contract
 
     def persisted?
       @model.persisted?
+    end
+
+    def full_messages_for
     end
   end
 end
