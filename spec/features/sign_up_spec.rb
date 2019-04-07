@@ -23,6 +23,6 @@ describe 'Sign Up' do
 
   context 'invalid form' do
     let(:email) { 'wrong' }
-    it { expect(page).to have_inline_error('is in invalid format').for_field('Email')}
+    it { expect(page).to have_inline_error(t('errors.format?')).for_field('Email')}
   end 
 end

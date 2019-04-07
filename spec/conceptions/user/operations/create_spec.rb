@@ -32,8 +32,8 @@ describe User::Create do
 
     it do
       is_expected.to be_failure
-      expect(subject["contract.default"].errors[:password_confirmation])
-        .to include('must be equal to password')
+      expect(subject['contract.default'].errors[:password_confirmation])
+        .to include(t('errors.rules.password_confirmation.eql?'))
     end
   end
 
@@ -48,7 +48,7 @@ describe User::Create do
 
     it do
       is_expected.to be_failure
-      expect(subject["contract.default"].errors[:email]).to include('is in invalid format')
+      expect(subject['contract.default'].errors[:email]).to include(t('errors.format?'))
     end
   end
 end

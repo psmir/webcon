@@ -1,3 +1,4 @@
+require "i18n"
 require "reform/form/dry"
 require 'dry/validation/compat/form'
 
@@ -8,10 +9,15 @@ end
 # reform + simple_form
 # fix 'undefined method full_messages_for'
 
-class Reform::Contract::Result::Errors
-  def full_messages_for(field_name)
-    errors = @dotted_errors[field_name]
-		human_field = field_name.to_s.gsub(/([\.\_])+/, " ").gsub(/(\b\w)+/) { |s| s.capitalize }
-	  errors.collect { |message| "#{human_field} #{message}" }.flatten
-  end
+# class Reform::Contract::Result::Errors
+#   def full_messages_for(field_name)
+#     errors = @dotted_errors[field_name]
+#     human_field = I18n.t(field_name)
+# 		human_field ||= field_name.to_s.gsub(/([\.\_])+/, " ").gsub(/(\b\w)+/) { |s| s.capitalize }
+# 	  errors.collect { |message| "#{human_field} #{message}" }.flatten
+#   end
+# end
+
+Dry::Validation::Schema.configure do |config|
+  config.messages = :i18n
 end

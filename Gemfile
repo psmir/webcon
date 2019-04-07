@@ -43,6 +43,7 @@ group :development, :test do
   gem 'capybara', '~> 3.16.0'
   gem 'capybara-webkit', '~> 1.15.1'
   gem 'capybara-email', '~> 3.0.1'
+  gem 'byebug'
 end
 
 group :development do

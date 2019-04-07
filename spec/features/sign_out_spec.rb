@@ -7,7 +7,7 @@ describe 'Sign Out' do
 
   before do
     sign_in user
-    click_link 'Выход'
+    click_link t(:sign_out)
   end
 
   it { expect(current_path).to eq root_path }
