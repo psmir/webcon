@@ -9,10 +9,10 @@ describe 'Sign Up' do
   before do
     visit new_users_path
     fill_in 'Email', with: email
-    select 'Consultant', from: 'Account Type'
-    fill_in 'Password', with: 'password', match: :prefer_exact
-    fill_in 'Password confirmation', with: 'password', match: :prefer_exact
-    click_button 'Регистрация'
+    select t(:consultant), from: t(:account_type)
+    fill_in t(:password), with: 'password', match: :prefer_exact
+    fill_in t(:password_confirmation), with: 'password', match: :prefer_exact
+    click_button t(:sign_up)
   end
 
   it do

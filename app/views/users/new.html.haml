@@ -1,7 +1,7 @@
 = simple_form_for @form do |f|
   = f.input :email
-  = f.input :role, as: :select, collection: { 'Client' => 'client', 'Consultant' => 'consultant' },
-    label: 'Account Type', include_blank: false
-  = f.input :password
-  = f.input :password_confirmation
+  = f.input :role, as: :select, collection: { t(:client) => 'client', t(:consultant) => 'consultant' },
+    label: t(:account_type), include_blank: false
+  = f.input :password, label: t(:password)
+  = f.input :password_confirmation, label: t(:password_confirmation)
   = f.submit t(:sign_up)

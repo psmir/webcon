@@ -8,6 +8,9 @@ ru:
   email: 'Email'
   password: 'Пароль'
   password_confirmation: 'Подтверждение пароля'
+  account_type: 'Тип аккаунта'
+  client: 'Клиент'
+  consultant: 'Консультант'
 
   personal_growth: "Личностный рост"
   career: "Карьера"
