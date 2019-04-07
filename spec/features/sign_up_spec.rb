@@ -16,8 +16,13 @@ describe 'Sign Up' do
   end
 
   it do
-    expect(page).to have_content 'Регистрация завершена. Вы можете войти.'
+    expect(page).to have_content t(:signed_up_message)
     expect(current_path).to eq new_session_path
     expect(User.find_by(email: email)).to be_consultant
   end
+
+  context 'invalid form' do
+    let(:email) { 'wrong' }
+    it { expect(page).to have_inline_error('is in invalid format').for_field('Email')}
+  end 
 end
