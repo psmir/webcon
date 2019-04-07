@@ -11,10 +11,10 @@ module FeatureHelpers
 
     def sign_in(user)
       visit new_session_path
-      fill_in 'Email', with: user.email
-      fill_in 'Password', with: user.password
-      click_button 'Вход'
-      expect(page).to have_link 'Выход'
+      fill_in t(:email), with: user.email
+      fill_in t(:password), with: user.password
+      click_button t(:sign_in)
+      expect(page).to have_link t(:sign_out)
     end
   end
 end
