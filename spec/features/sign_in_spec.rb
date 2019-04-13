@@ -3,7 +3,17 @@
 require 'rails_helper'
 
 describe 'Sign In' do
-  let!(:user) { create_user(email: 'tester@good.local', password: 'password') }
+  let!(:user) do
+    User::Create.call(
+      params: {
+        user: {
+          email: 'tester@good.local',
+          password: 'password',
+          password_confirmation: 'password'
+        }
+      }
+    )
+  end
 
   before do
     visit root_path
@@ -13,8 +23,30 @@ describe 'Sign In' do
     click_button t(:sign_in)
   end
 
-  it do
-    expect(page).to have_content t(:greeting)
-    expect(current_path).to eq dashboard_path
+  context 'user' do
+    it do
+      expect(page).to have_content t(:greeting)
+      expect(current_path).to eq dashboard_path
+    end
+  end
+
+  context 'consultant' do
+    let!(:user) do
+      User::Create.call(
+        params: {
+          user: {
+            email: 'tester@good.local',
+            password: 'password',
+            password_confirmation: 'password',
+            role: 'consultant'
+          }
+        }
+      )
+    end
+
+    it do
+      expect(page).to have_content t(:greeting)
+      expect(current_path).to eq consultant_panel_path
+    end
   end
 end
