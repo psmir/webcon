@@ -7,6 +7,7 @@ describe User::Create do
   let(:password) { 'password' }
   let(:password_confirmation) { 'password' }
   let(:role) { 'client' }
+  let!(:some_user) { nil }
 
   let(:params) do
     { 
@@ -49,6 +50,36 @@ describe User::Create do
     it do
       is_expected.to be_failure
       expect(subject['contract.default'].errors[:email]).to include(t('errors.format?'))
+    end
+  end
+
+  context 'email is taken' do
+    context 'for the current role' do
+      let!(:some_user) { User::Create.(params) }
+
+      it do
+        is_expected.to be_failure
+        expect(subject['contract.default'].errors[:email]).to include(t('errors.unique?'))      
+      end
+    end
+
+    context 'for another role' do
+      let(:some_params) do
+        {
+          params: {
+            user: {
+              email: email,
+              password: password,
+              password_confirmation: password_confirmation,
+              role: 'consultant'
+            }
+          }
+        }
+      end
+
+      let!(:some_user) { User::Create.(some_params) }
+
+      it { is_expected.to be_success }
     end
   end
 end

@@ -92,3 +92,5 @@ ru:
     rules:
       password_confirmation:
         eql?: 'должно совпадать с паролем'
+    
+    unique?: 'занято'
