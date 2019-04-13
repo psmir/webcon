@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/thoughtbot/capybara-webkit.git
+  revision: 77fdac424cd6fdb5aa266b229a888cc58da8e95e
+  specs:
+    capybara-webkit (1.15.1)
+      capybara (>= 2.3, < 4.0)
+      json
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,9 +70,6 @@ GEM
     capybara-email (3.0.1)
       capybara (>= 2.4, < 4.0)
       mail
-    capybara-webkit (1.15.1)
-      capybara (>= 2.3, < 4.0)
-      json
     concurrent-ruby (1.1.4)
     crass (1.0.4)
     declarative (0.0.10)
@@ -267,6 +272,9 @@ GEM
       railties (>= 4.0.0)
       trailblazer (>= 2.1.0.beta1, < 2.2.0)
       trailblazer-loader (>= 0.1.0)
+    turbolinks (5.2.0)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uber (0.1.0)
@@ -294,7 +302,7 @@ DEPENDENCIES
   byebug
   capybara (~> 3.16.0)
   capybara-email (~> 3.0.1)
-  capybara-webkit (~> 1.15.1)
+  capybara-webkit!
   dotenv-rails
   dry-validation (~> 0.13.1)
   haml-rails (~> 1.0.0)
@@ -311,6 +319,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   trailblazer (~> 2.1.0.rc1)
   trailblazer-rails (~> 2.1.7)
+  turbolinks (~> 5.2.0)
   tzinfo-data
   web-console (>= 3.3.0)
   webpacker

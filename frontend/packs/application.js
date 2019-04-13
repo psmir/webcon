@@ -13,6 +13,7 @@ console.log('Hello World from Webpacker')
 import '../stylesheets/application.css.scss'
 
 // JS
+import "babel-polyfill";
 import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
 import 'bootstrap';
@@ -24,6 +25,8 @@ require.context('../images/', true, /\.(gif|jpg|png|svg)$/i);
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 
+window.$ = window.jQuery = require('jquery');
+window.Popper = require('popper.js').default; 
 const application = Application.start()
 const context = require.context("controllers", true, /.js$/)
 application.load(definitionsFromContext(context))

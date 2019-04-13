@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml-rails', '~> 1.0.0'
+gem 'turbolinks', '~> 5.2.0' # to support redirect_to
 gem 'komponent', '~> 2.2.0'
 gem 'bcrypt', '~> 3.1.12'
 gem 'simple_form', '~> 4.1.0'
@@ -41,7 +42,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.8'
   gem 'capybara', '~> 3.16.0'
-  gem 'capybara-webkit', '~> 1.15.1'
+  gem 'capybara-webkit', git: "https://github.com/thoughtbot/capybara-webkit.git"
   gem 'capybara-email', '~> 3.0.1'
   gem 'byebug'
 end

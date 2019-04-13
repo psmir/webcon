@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-describe 'Sign Up' do
+describe 'Sign Up', js: true do
   let(:email) { 'good@email.local' }
   let(:password) { 'password' }
 
@@ -23,6 +23,8 @@ describe 'Sign Up' do
 
   context 'invalid form' do
     let(:email) { 'wrong' }
-    it { expect(page).to have_inline_error(t('errors.format?')).for_field('Email')}
+    it do
+      expect(page).to have_inline_error(t('errors.format?')).for_field('Email')
+    end
   end 
 end
