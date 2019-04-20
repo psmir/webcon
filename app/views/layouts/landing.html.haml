@@ -4,7 +4,7 @@
 
   %body
     = render 'shared/fancy_header'
-    %main.container
+    %main.container.py-5
       = component 'flash', flash_messages: flash
       = yield
     = render 'shared/footer'

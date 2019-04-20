@@ -4,7 +4,7 @@
 
   %body
     = render 'shared/header'
-    %main.container
+    %main.container.after-fixed-navbar
       = component 'flash', flash_messages: flash
       = yield
     = render 'shared/footer'

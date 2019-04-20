@@ -1,8 +1,9 @@
-html, body, body > div {
+html, body {
   height: 100%;
 }
 .wrapper {
-  height: 100%;
+  height: 50%;
+  @media (min-width: 768px) { height: 100%; }
 }
 
 .view {
@@ -12,13 +13,15 @@ html, body, body > div {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
+  @media (min-width: 768px) { height: 100%; }
   background-attachment: fixed;
   overflow: hidden;
 }
 
 #fancy_header {
-  height: 100%;
+  height: 50%;
+  @media (min-width: 768px) { height: 100%; }
   .navbar {
     transition: padding 0.5s ease, background 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
     box-shadow: 0 4px 4px 0 rgba(34,36,38,.15);
@@ -36,7 +39,10 @@ html, body, body > div {
   background-attachment: fixed;
 }
 
+.after-fixed-navbar {
+  padding-top: 4em;
+}
+
 main {
-  margin-top: 4rem;
-  min-height: 100vh;
+  min-height: 80vh;
 }
