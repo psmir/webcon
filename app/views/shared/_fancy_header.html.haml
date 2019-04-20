@@ -1,13 +1,16 @@
 %header#fancy_header
   %nav.navbar.navbar-expand-lg.navbar-dark.fixed-top.initial
-    %a.navbar-brand{ href: root_path } WebCon
-    %ul.navbar-nav.ml-auto
-      - if current_user
-        %li.nav-item       
-          = link_to 'Выход', session_path, method: :delete, class: 'nav-link'
-      - else
-        %li.nav-item
-          = link_to 'Вход', new_session_path, class: 'nav-link'
-        %li.nav-item
-          = link_to 'Регистрация', new_users_path, class: 'nav-link'
+    %button.navbar-toggler{type: 'button', data: {toggle: 'collapse', target: '#navbarToggler'}, aria: {controls: 'navbarToggler', expanded: 'false', label: 'Toggle navigation'}}
+      %span.navbar-toggler-icon
+    #navbarToggler.collapse.navbar-collapse
+      %a.navbar-brand{ href: root_path } WebCon
+      %ul.navbar-nav.ml-auto
+        - if current_user
+          %li.nav-item       
+            = link_to 'Выход', session_path, method: :delete, class: 'nav-link'
+        - else
+          %li.nav-item
+            = link_to 'Вход', new_session_path, class: 'nav-link'
+          %li.nav-item
+            = link_to 'Регистрация', new_users_path, class: 'nav-link'
   #intro.view
