@@ -9,7 +9,10 @@ class User::Authenticate < Trailblazer::Operation
   step :authenticate_user
 
   def find_user(options, params:, **)
-    options[:user] = User.find_by(email: params[:session][:email])
+    options[:user] = User.find_by(
+      email: params[:session][:email],
+      role: params[:session][:role]
+    )
   end
 
   def authenticate_user(options, params:, **)
