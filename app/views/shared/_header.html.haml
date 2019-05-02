@@ -3,5 +3,8 @@
     %a.navbar-brand{ href: root_path } WebCon
     %ul.navbar-nav.ml-auto
       - if current_user
+        - if current_user.consultant?
+          %li.nav-item
+            = link_to t(:profile), edit_consultant_profile_path, class: 'nav-link'
         %li.nav-item
-          = link_to 'Выход', session_path, method: :delete, class: 'nav-link'
+          = link_to t(:sign_out), session_path, method: :delete, class: 'nav-link'

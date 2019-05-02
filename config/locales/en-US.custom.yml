@@ -30,18 +30,23 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en-US:
+  authorization_error: 'You are not authorized'
+  description: 'Description'
+  profile: 'Profile'
+  profile_updated: 'Profile has been updated'
   sign_in: "Sign In"
   sign_up: "Sign Up"
   sign_out: "Sign Out"
   greeting: 'Welcome!'
   wrong_credentials: 'Email or password is invalid'
   signed_up_message: 'You have signed up successfully. Now you can sign in.'
+  save: 'Save'
   email: 'Email'
   password: 'Password'
   password_confirmation: 'Password Confirmation'
   account_type: 'Account Type'
-  client: 'Клиент'
-  consultant: 'Консультант'
+  client: 'Client'
+  consultant: 'Consultant'
 
   pesonal_growth: "Personal Growth"
   career: "Career"

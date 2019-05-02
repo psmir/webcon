@@ -45,6 +45,7 @@ group :development, :test do
   gem 'capybara-webkit', git: "https://github.com/thoughtbot/capybara-webkit.git"
   gem 'capybara-email', '~> 3.0.1'
   gem 'byebug'
+  gem 'faker', '~> 1.9.3'
 end
 
 group :development do

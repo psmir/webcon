@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 describe 'Sign Out' do
-  let!(:user) { create_user(email: 'good@email.local', password: 'password') }
+  let!(:user) { create_user }
 
   before do
     sign_in user

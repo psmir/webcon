@@ -1,0 +1,5 @@
+= simple_form_for @result['contract.default'], url: consultant_profile_path,
+  as: :consultant_profile, html: { id: 'edit_consultant_profile', method: :patch },
+   remote: true do |f|
+  = f.input :description, as: :text, label: t(:description)
+  = f.submit t(:save), class: 'btn btn-primary'

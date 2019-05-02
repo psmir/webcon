@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resource :session
   resource :users, only: %i[new create]
+  resource :consultant_profile, only: %i[edit update]
 
   root to: 'landing#index'
 end

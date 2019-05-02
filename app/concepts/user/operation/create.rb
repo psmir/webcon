@@ -10,6 +10,7 @@ class User::Create < Trailblazer::Operation
   step :create_consultant_profile
 
   def create_consultant_profile(options, **)
+    options[:my_property] = 5
     options[:model].create_consultant_profile if options[:model].consultant?
     options[:model]
   end

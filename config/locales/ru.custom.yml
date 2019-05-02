@@ -1,11 +1,15 @@
 ru:
-  and: 'и'
+  authorization_error: 'Нет доступа'
+  description: 'Описание'
+  profile: 'Профиль'
+  profile_updated: 'Профиль обновлен'
   sign_in: "Вход"
   sign_up: "Регистрация"
   sign_out: "Выход"
   greeting: 'Добро пожаловать!'
   wrong_credentials: 'Неверный еmail или пароль'
   signed_up_message: 'Регистрация завершена. Вы можете войти.'
+  save: 'Сохранить'
   email: 'Email'
   password: 'Пароль'
   password_confirmation: 'Подтверждение пароля'
