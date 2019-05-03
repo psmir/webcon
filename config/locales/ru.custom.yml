@@ -1,5 +1,6 @@
 ru:
   authorization_error: 'Нет доступа'
+  consultant_profiles: 'Профили консультантов'
   description: 'Описание'
   profile: 'Профиль'
   profile_updated: 'Профиль обновлен'

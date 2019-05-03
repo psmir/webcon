@@ -35,6 +35,8 @@ gem 'reform', '2.3.0.rc1'
 gem 'dry-validation', '~> 0.13.1'
 gem 'trailblazer', '~> 2.1.0.rc1'
 gem 'trailblazer-rails', '~> 2.1.7'
+gem 'kaminari', '~> 1.1.1'
+gem 'bootstrap4-kaminari-views', '~> 1.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

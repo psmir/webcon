@@ -31,6 +31,7 @@
 
 en-US:
   authorization_error: 'You are not authorized'
+  consultant_profiles: 'Consultant Profiles'
   description: 'Description'
   profile: 'Profile'
   profile_updated: 'Profile has been updated'

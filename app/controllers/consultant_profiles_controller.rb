@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 class ConsultantProfilesController < ApplicationController
+  skip_before_action :require_login, only: %i[index]
+
+  def index
+    perform ConsultantProfile::Index
+  end
+
   def edit
     perform ConsultantProfile::Update::Present
   end

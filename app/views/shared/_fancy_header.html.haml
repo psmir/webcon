@@ -5,6 +5,8 @@
     #navbarToggler.collapse.navbar-collapse
       %a.navbar-brand{ href: root_path } WebCon
       %ul.navbar-nav.ml-auto
+        %li.nav-item
+          = link_to t(:consultant_profiles), consultant_profiles_path, class: 'nav-link'
         - if current_user
           %li.nav-item       
             = link_to t(:sign_out), session_path, method: :delete, class: 'nav-link'
