@@ -4,6 +4,7 @@ module ConsultantProfile::Contract
   class Update < Reform::Form
     include Dry
 
+    property :photo, virtual: true
     property :description
 
     validation do
