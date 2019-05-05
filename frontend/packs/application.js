@@ -17,6 +17,7 @@ import "babel-polyfill";
 import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
 import 'bootstrap';
+import 'bootstrap-fileinput';
 import '../src/global.js';
 import '../components/index.js';
 

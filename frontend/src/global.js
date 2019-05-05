@@ -9,4 +9,6 @@ $(document).ready(function() {
       $navbar.addClass('initial').removeClass('bg-dark');
     }
   });
+
+  $("#consultant_profile_photo").fileinput();
 });
