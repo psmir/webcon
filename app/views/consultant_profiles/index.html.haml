@@ -1,9 +1,6 @@
 %h1.text-center.my-5= t(:consultant_profiles)
 .row.justify-content-center
   - @result[:consultant_profiles].each do |cp|
-    .col.col-md-4
-      .card.m-2{ id: dom_id(cp) }
-        .card-body
-          = cp.description
+    = component 'consultant_card', cp: cp
 .my-5.d-flex.flex-row.justify-content-center
   = paginate @result[:consultant_profiles], theme: 'twitter-bootstrap-4'

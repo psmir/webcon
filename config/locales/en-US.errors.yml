@@ -92,5 +92,7 @@ en-US:
     rules:
       password_confirmation:
         eql?: 'must be equal to password'
+      gender:
+        included_in?: 'must be Male or Female'
     
     unique?: 'is taken'

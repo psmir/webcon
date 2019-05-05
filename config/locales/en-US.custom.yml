@@ -30,9 +30,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en-US:
+  age:
+    one: '%{count} year old'
+    other: '%{count} years old'
   authorization_error: 'You are not authorized'
+  birthday: 'Birthday'
   consultant_profiles: 'Consultant Profiles'
   description: 'Description'
+  gender: 'Gender'
+  female: 'Female'
+  male: 'Male'
+  name: 'Name'
+  not_selected: 'Not selected'
+  middle_name: 'Middle Name'
+  surname: 'Surname'
   profile: 'Profile'
   profile_updated: 'Profile has been updated'
   sign_in: "Sign In"
@@ -64,3 +75,5 @@ en-US:
     attributes:
       user:
         password_digest: "Password"
+      consultant_profile:
+        name: 'Consultant name'

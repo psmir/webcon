@@ -1,7 +1,21 @@
 ru:
+  age:
+    zero: '%{count} лет'
+    one: '%{count} год'
+    few: '%{count} года'
+    many: '%{count} лет'
+    
   authorization_error: 'Нет доступа'
+  birthday: 'Дата рождения'
   consultant_profiles: 'Профили консультантов'
   description: 'Описание'
+  gender: 'Пол'
+  female: 'Женский'
+  male: 'Мужской'
+  name: 'Имя'
+  not_selected: 'Не выбрано'
+  middle_name: 'Отчество'
+  surname: 'Фамилия'
   profile: 'Профиль'
   profile_updated: 'Профиль обновлен'
   sign_in: "Вход"

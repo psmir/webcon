@@ -6,6 +6,7 @@ class ConsultantProfile::Index < Trailblazer::Operation
   private
 
   def fetch_consultant_profiles(options, params:, **)
-    options[:consultant_profiles] = ConsultantProfile.page(params[:page] || 1).per(9)
+    options[:consultant_profiles] = ConsultantProfile.order('updated_at desc')
+      .page(params[:page] || 1).per(9)
   end
 end

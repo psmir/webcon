@@ -1,9 +1,15 @@
 = simple_form_for @result['contract.default'], url: consultant_profile_path,
-  as: :consultant_profile, html: { id: 'edit_consultant_profile', method: :patch },
-   remote: true do |f|
+  as: :consultant_profile, html: { id: 'edit_consultant_profile' },
+   remote: true, method: :put do |f|
   - if f.object.model.photo.attached?
     = image_tag url_for(f.object.model.photo), class: 'img-thumbnail'
     = f.input :remove_photo, as: :boolean
   = f.file_field :photo
+  = f.input :name, label: t(:name)
+  = f.input :middle_name, label: t(:middle_name)
+  = f.input :surname, label: t(:surname)
+  = f.input :birthday, label: t(:birthday), input_html: { class: 'datepicker' }
+  = f.input :gender, as: :select, collection: { t(:not_selected) => 'not_selected',
+    t(:male) => 'male', t(:female) => 'female' }, label: t(:gender), include_blank: false
   = f.input :description, as: :text, label: t(:description)
   = f.submit t(:save), class: 'btn btn-primary'

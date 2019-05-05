@@ -4,12 +4,22 @@ require 'rails_helper'
 
 describe ConsultantProfile::Update do
   let!(:user) { create_user role: 'consultant' }
+  let(:name) { Faker::Name.first_name }
+  let(:middle_name) { Faker::Name.middle_name }
+  let(:surname) { Faker::Name.last_name }
+  let(:birthday) { Faker::Date.between(70.years.ago, 20.years.ago) }
+  let(:gender) { 'male' }
   let(:description) { Faker::Lorem.paragraph_by_chars(100, false) }
 
   let!(:result) do
     ConsultantProfile::Update.call(
       params: {
         consultant_profile: {
+          name: name,
+          middle_name: middle_name,
+          surname: surname,
+          gender: gender,
+          birthday: birthday.to_s,
           description: description
         }
       },

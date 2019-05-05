@@ -20,18 +20,24 @@ import 'bootstrap';
 import '@fortawesome/fontawesome-free/js/all';
 import 'bootstrap-fileinput';
 import 'bootstrap-fileinput/themes/fa/theme.min';
-import '../src/global.js';
-import '../components/index.js';
+import { Russian } from "flatpickr/dist/l10n/ru.js"
+import flatpickr from "flatpickr";
+
 
 // images
 require.context('../images/', true, /\.(gif|jpg|png|svg)$/i);
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 
+
 window.$ = window.jQuery = require('jquery');
-window.Popper = require('popper.js').default; 
+window.Popper = require('popper.js').default;
 const application = Application.start()
 const context = require.context("controllers", true, /.js$/)
 application.load(definitionsFromContext(context))
 Rails.start();
 Turbolinks.start();
+flatpickr.localize(Russian);
+
+import '../src/global.js';
+import '../components/index.js';

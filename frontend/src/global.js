@@ -13,4 +13,9 @@ $(document).on('turbolinks:load', function() {
   $("#consultant_profile_photo").fileinput({
     theme: 'fa'
   });
+
+  flatpickr('#consultant_profile_birthday', {
+    minDate: '1940-01-01',
+    maxDate: '2000-01-01'
+  });
 });

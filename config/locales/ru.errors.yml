@@ -92,5 +92,8 @@ ru:
     rules:
       password_confirmation:
         eql?: 'должно совпадать с паролем'
+      
+      gender:
+        included_in?: 'должен быть Мужской или Женский'
     
     unique?: 'занято'
