@@ -1,6 +1,9 @@
 = simple_form_for @result['contract.default'], url: consultant_profile_path,
   as: :consultant_profile, html: { id: 'edit_consultant_profile', method: :patch },
    remote: true do |f|
+  - if f.object.model.photo.attached?
+    = image_tag url_for(f.object.model.photo), class: 'img-thumbnail'
+    = f.input :remove_photo, as: :boolean
   = f.file_field :photo
   = f.input :description, as: :text, label: t(:description)
   = f.submit t(:save), class: 'btn btn-primary'

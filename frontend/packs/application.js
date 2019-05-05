@@ -17,7 +17,9 @@ import "babel-polyfill";
 import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
 import 'bootstrap';
+import '@fortawesome/fontawesome-free/js/all';
 import 'bootstrap-fileinput';
+import 'bootstrap-fileinput/themes/fa/theme.min';
 import '../src/global.js';
 import '../components/index.js';
 

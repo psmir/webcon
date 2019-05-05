@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
   $( window ).scroll(function() {
     var scrollPos = $(document).scrollTop();
     var $navbar = $('#fancy_header .navbar').first();
@@ -10,5 +10,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#consultant_profile_photo").fileinput();
+  $("#consultant_profile_photo").fileinput({
+    theme: 'fa'
+  });
 });

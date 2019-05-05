@@ -5,6 +5,7 @@ module ConsultantProfile::Contract
     include Dry
 
     property :photo, virtual: true
+    property :remove_photo, virtual: true
     property :description
 
     validation do
