@@ -1,11 +1,10 @@
-.col.col-md-4.p-3
-  .card{ id: dom_id(@cp) }
-    - if @cp.photo.attached?
-      = image_tag url_for(@cp.photo), class: 'card-img-top'
-    - else
-      = image_tag asset_pack_path('images/avatar.jpg')
-    .card-body
-      %h5.card-title
-        = title
-      %p.card-text
-        = @cp.description
+.card{ id: dom_id(@cp) }
+  - if @cp.photo.attached?
+    = image_tag url_for(@cp.photo), class: 'card-img-top'
+  - else
+    = image_tag asset_pack_path('images/avatar.jpg')
+  .card-body
+    %h5.card-title
+      = title
+    %p.card-text
+      = @cp.description
