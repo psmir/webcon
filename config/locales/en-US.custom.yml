@@ -30,50 +30,72 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en-US:
+  account_type: 'Account Type'
+  activerecord:
+    attributes:
+      consultant_profile:
+        name: 'Consultant name'
+      user:
+        password_digest: "Password"
+      
   age:
     one: '%{count} year old'
     other: '%{count} years old'
   authorization_error: 'You are not authorized'
+
   birthday: 'Birthday'
-  consultant_profiles: 'Consultant Profiles'
-  description: 'Description'
-  gender: 'Gender'
-  female: 'Female'
-  male: 'Male'
-  name: 'Name'
-  not_selected: 'Not selected'
-  middle_name: 'Middle Name'
-  surname: 'Surname'
-  profile: 'Profile'
-  profile_updated: 'Profile has been updated'
-  sign_in: "Sign In"
-  sign_up: "Sign Up"
-  sign_out: "Sign Out"
-  greeting: 'Welcome!'
-  wrong_credentials: 'Email or password is invalid'
-  signed_up_message: 'You have signed up successfully. Now you can sign in.'
-  save: 'Save'
-  email: 'Email'
-  password: 'Password'
-  password_confirmation: 'Password Confirmation'
-  photo: 'Photo'
-  account_type: 'Account Type'
+
+  career: "Career"
   client: 'Client'
   consultant: 'Consultant'
+  consultant_profiles: 'Consultant Profiles'
 
-  pesonal_growth: "Personal Growth"
-  career: "Career"
-  family: "Family"
+  description: 'Description'
+
+  email: 'Email'
+
+  family: "Family"  
+  female: 'Female'
+
+  gender: 'Gender'
+  greeting: 'Welcome!'
+
   image_making: "Image-making"
-  time_management: "Time-management"
+
   happiness: "Happiness"
 
   landing:
     promise: "Our experts will help you!"
 
-  activerecord:
-    attributes:
-      user:
-        password_digest: "Password"
-      consultant_profile:
-        name: 'Consultant name'
+  male: 'Male'
+  middle_name: 'Middle Name'
+
+  name: 'Name'
+  not_selected: 'Not selected'
+  
+  password: 'Password'
+  password_confirmation: 'Password Confirmation'
+  pesonal_growth: "Personal Growth"
+  photo: 'Photo'
+  profile: 'Profile'
+  profile_updated: 'Profile has been updated'
+
+  save: 'Save'  
+  sign_in: "Sign In"
+  sign_out: "Sign Out"
+  sign_up: "Sign Up"
+  signed_up_message: 'You have signed up successfully. Now you can sign in.'
+  surname: 'Surname'
+  
+  time_management: "Time-management"
+  
+  wrong_credentials: 'Email or password is invalid'
+  
+  
+
+  
+  
+
+  
+
+  

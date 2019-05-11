@@ -1,4 +1,9 @@
 ru:
+  account_type: 'Тип аккаунта'
+  activerecord:
+    attributes:
+      user:
+        password_digest: "Пароль"
   age:
     zero: '%{count} лет'
     one: '%{count} год'
@@ -6,44 +11,54 @@ ru:
     many: '%{count} лет'
     
   authorization_error: 'Нет доступа'
+
   birthday: 'Дата рождения'
-  consultant_profiles: 'Профили консультантов'
-  description: 'Описание'
-  gender: 'Пол'
-  female: 'Женский'
-  male: 'Мужской'
-  name: 'Имя'
-  not_selected: 'Не выбрано'
-  middle_name: 'Отчество'
-  surname: 'Фамилия'
-  profile: 'Профиль'
-  profile_updated: 'Профиль обновлен'
-  sign_in: "Вход"
-  sign_up: "Регистрация"
-  sign_out: "Выход"
-  greeting: 'Добро пожаловать!'
-  wrong_credentials: 'Неверный еmail или пароль'
-  signed_up_message: 'Регистрация завершена. Вы можете войти.'
-  save: 'Сохранить'
-  email: 'Email'
-  password: 'Пароль'
-  password_confirmation: 'Подтверждение пароля'
-  photo: 'Фото'
-  account_type: 'Тип аккаунта'
+
+  career: "Карьера"  
   client: 'Клиент'
   consultant: 'Консультант'
+  consultant_profiles: 'Профили консультантов'
 
-  personal_growth: "Личностный рост"
-  career: "Карьера"
-  family: "Семья"
+  description: 'Описание'
+
+  email: 'Email'  
+
+  family: "Семья"  
+  female: 'Женский'  
+
+  gender: 'Пол'
+  greeting: 'Добро пожаловать!'
+
+  happiness: "Счастье"  
   image_making: "Работа над Вашим имиджем"
-  time_management: "Тайм-менеджмент"
-  happiness: "Счастье"
+
 
   landing:
     promise: "Наши специалисты помогут Вам!"
 
-  activerecord:
-    attributes:
-      user:
-        password_digest: "Пароль"
+  male: 'Мужской'
+  middle_name: 'Отчество'
+
+  name: 'Имя'
+  not_selected: 'Не выбрано'
+
+  password: 'Пароль'
+  password_confirmation: 'Подтверждение пароля'
+  personal_growth: "Личностный рост"
+  photo: 'Фото'
+  profile: 'Профиль'
+  profile_updated: 'Профиль обновлен'
+
+  save: 'Сохранить'  
+  sign_in: "Вход"
+  sign_up: "Регистрация"
+  sign_out: "Выход"
+  signed_up_message: 'Регистрация завершена. Вы можете войти.'
+  surname: 'Фамилия'
+  
+  time_management: "Тайм-менеджмент"
+  
+  wrong_credentials: 'Неверный еmail или пароль'
+  
+  
+
