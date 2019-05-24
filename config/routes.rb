@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   resource :consultant_profile, only: %i[edit update]
   resources :consultant_profiles, only: %i[index]
 
+  match 'proceed' => 'operations#proceed', via: [:get, :post, :options]
+
   root to: 'landing#index'
 end
